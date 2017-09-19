@@ -22,7 +22,6 @@ import com.relesi.pontointeligente.api.entities.Funcionario;
 import com.relesi.pontointeligente.api.entities.Lancamento;
 import com.relesi.pontointeligente.api.enums.PerfilEnum;
 import com.relesi.pontointeligente.api.enums.TipoEnum;
-import com.relesi.pontointeligente.api.utils.PasswordUtilsTest;
 import com.relesi.pontointeligente.api.utils.PasswordUtils;
 
 @RunWith(SpringRunner.class)
@@ -84,7 +83,7 @@ public class LancamentoRepositoryTest {
 		Funcionario funcionario = new Funcionario();
 		funcionario.setNome("Fulano de Tal");
 		funcionario.setPerfil(PerfilEnum.ROLE_USUARIO);
-		//funcionario.setSenha(PasswordUtilsTest.gerarBCrypt("123456"));
+		funcionario.setSenha(PasswordUtils.gerarBCrypt("123456"));
 		funcionario.setCpf("24291173474");
 		funcionario.setEmail("email@email.com");
 		funcionario.setEmpresa(empresa);
