@@ -24,6 +24,4 @@ public class PasswordUtilsTest {
 		assertTrue(bCryptEncoder.matches(SENHA, hash));
 	}
 
-
-
 }
