@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
 import com.relesi.pontointeligente.api.entities.Empresa;
 import com.relesi.pontointeligente.api.repositories.EmpresaRepository;
 import com.relesi.pontointeligente.api.services.EmpresaService;
-import com.relesi.pontointeligente.api.services.EmpresaServiceTest;
 
 
 
